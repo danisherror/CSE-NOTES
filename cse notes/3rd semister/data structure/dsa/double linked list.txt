@@ -1,0 +1,103 @@
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct node *nodeptr;
+typedef struct node
+{
+    int data;
+    nodeptr llink;
+    nodeptr rlink;
+}node;
+nodeptr insertfront(nodeptr head)
+{
+    nodeptr temp;
+    temp=(nodeptr)malloc(sizeof(node));
+    printf("enter the data\n");
+    scanf("%d",&temp->data);
+    if(head)
+    {
+        head->rlink=temp;
+        temp->llink=head;
+    }
+    else
+    {
+        temp->rlink=NULL;
+        temp->llink=NULL;
+    }
+    head=temp;
+    return head;
+}
+void displayfront(nodeptr head)
+{
+    int i=0;
+    while(head!=NULL)
+    {
+        printf("element %d : %d\n",i,head->data);
+        head=head->llink;
+        i++;
+    }
+}
+nodeptr deletefirst(nodeptr head)
+{
+    nodeptr temp;
+    temp=head;
+    head=head->llink;
+    head->rlink=NULL;
+    free(temp);
+    return head;
+}
+nodeptr insertend(nodeptr head)
+{
+    nodeptr temp;
+    temp=(nodeptr)malloc(sizeof(node));
+    printf("Enter the data\n");
+    scanf("%d",&temp->data);
+    temp->llink=NULL;
+    temp->rlink=NULL;
+    if(head)
+    {
+        head->llink=temp;
+        temp->rlink=head;
+    }
+    head=temp;
+    return head;
+    
+}
+nodeptr displaylast(nodeptr head)
+{
+    int i=0;
+    while(head!=NULL)
+    {
+        printf("element %d : %d\n",i,head->data);
+        head=head->rlink;
+        i++;
+    }
+}
+int main()
+{
+    int x;
+    nodeptr head;
+    head=(nodeptr)malloc(sizeof(node));
+    head=NULL;
+    printf("Enter 1.insert\n2.displayfront\n3.exit\n");
+        printf("4.deletefront\n5.insert end\n6.displaylast\n");
+    while(1)
+    {
+        printf("---------------------------------------\n");
+        scanf("%d",&x);
+        switch(x)
+        {
+            case 1: head=insertfront(head);
+                    break;
+            case 2: displayfront(head);
+                    break;
+            case 3: exit (0);
+            case 4:head =deletefirst(head);
+                    break;
+            case 5: head=insertend(head);
+                    break;
+            case 6: displaylast(head);
+                    break;
+        }
+    }
+    
+}
