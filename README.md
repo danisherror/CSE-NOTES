@@ -40,4 +40,4 @@ Seniors drive link -- https://drive.google.com/drive/folders/1FPZP22gKIv_A-bJbOZ
 .
 .
 
-5th sem github link -- https://github.com/errordanish/5th_sem
+5th sem github link -- https://github.com/errordanish/5th_sem ★★★★★
