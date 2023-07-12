@@ -1,4 +1,8 @@
+# ai project drive
+https://drive.google.com/drive/folders/1sJK9Vv72HnEO0C6y2vUmSgNWb8M5i-Uv
+
 # CSE-NOTES
+
 
 RV notes drive link -- https://drive.google.com/drive/folders/0B-hAHq_HLorSZ1oyV0lMbTQxY0E?resourcekey=0-BogaLoFY42FV0ZmDBrx_NQ
 .
