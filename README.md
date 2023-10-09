@@ -52,8 +52,8 @@ Seniors drive link -- https://drive.google.com/drive/folders/1FPZP22gKIv_A-bJbOZ
 .                         
 .                
 .           
-6th sem github link -- https://github.com/danisherror/6thsem
-.
-.
-.
+6th sem github link -- https://github.com/danisherror/6thsem         
+.              
+.                 
+.                       
 7th sem drive link -- https://drive.google.com/drive/folders/1je9yeGEtW3j7m6AB-l1bA5rBbzHIMomk
