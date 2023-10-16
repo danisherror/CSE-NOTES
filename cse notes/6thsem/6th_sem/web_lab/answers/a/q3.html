@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateNetPrice(taxRate) {
+            var calc = (price) => {
+                if (typeof price !== 'number' || price < 0) {
+                    return "Invalid Price"
+                }
+                tax = (price * taxRate) / 100;
+                return price + tax;
+            }
+
+            return calc;
+        }
+        let price = prompt("enter thr price: ", 0);
+        let tax = prompt("enter the tax", 0);
+        const calculateNetPriceWithTax = calculateNetPrice(tax);
+        document.write("<h1>" + "total price is " + calculateNetPriceWithTax(price) + "</h1>");
+        //calculateNetPriceWithTax(100);   // Output: 110
+    </script>
+
+</body>
+
+</html>

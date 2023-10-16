@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function pul() {
+            var noun = prompt("Enter the noun", 'abc');
+            var number = prompt("enter the number", 0);
+            if (number != 1 && noun != 'sheep' && noun != 'geese') {
+                if(number>1)
+                {
+                return number + ' ' + noun + 's';
+                }
+                else
+                {
+                    return number + ' ' + noun;
+                }
+            } else {
+                return number + ' ' + noun;
+            }
+        }
+        var res = pul();
+        document.write("<h1>" + res + "<h1>");
+    </script>
+</body>
+
+</html>

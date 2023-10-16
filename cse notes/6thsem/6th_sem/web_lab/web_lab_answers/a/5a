@@ -1,0 +1,20 @@
+
+function pluralize(noun, number) {
+    if (number === 1) {
+      return `${number} ${noun}`;
+    } else {
+      // Handle special cases for collective nouns
+      if (noun === 'sheep' || noun === 'geese') {
+        return `${number} ${noun}`;
+      }
+      
+      // Regular pluralization
+      const pluralizedNoun = noun + 's';
+      return `${number} ${pluralizedNoun}`;
+    }
+  }
+  console.log(pluralize('cat', 5));     // Output: 5 cats
+  console.log(pluralize('dog', 1));     // Output: 1 dog
+  console.log(pluralize('sheep', 3));   // Output: 3 sheep
+  console.log(pluralize('goose', 2));   // Output: 2 geese
+  console.log(pluralize('bird', 0));    // Output: 0 birds

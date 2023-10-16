@@ -1,0 +1,25 @@
+function calculateNetPrice(taxRate) {
+  var res= function(price) {
+    // Check if the input is a valid number
+    if (typeof price !== 'number' || isNaN(price)) {
+      return "Invalid price";
+    }
+
+    // Calculate the tax amount
+    const taxAmount = price * (taxRate / 100);
+
+    // Calculate the net price (price + tax)
+    const netPrice = price + taxAmount;
+
+    return netPrice;
+  };
+  return res;
+}
+
+// Usage
+const calculateNetPriceWithTax = calculateNetPrice(10); // Assuming tax rate of 10%
+
+console.log(calculateNetPriceWithTax(100));   // Output: 110
+console.log(calculateNetPriceWithTax(50));    // Output: 55
+console.log(calculateNetPriceWithTax(75.5));  // Output: 83.05
+console.log(calculateNetPriceWithTax("abc")); // Output: Invalid price

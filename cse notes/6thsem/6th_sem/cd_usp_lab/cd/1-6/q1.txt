@@ -1,0 +1,19 @@
+%option noyywrap
+%{
+#include <stdio.h>
+int c=0;
+%}
+
+%%
+\n {c++;}
+["][a-zA-Z0-9 ]*["] {ECHO; printf("\nValid string at line %d\n", c+1);}
+["][a-zA-Z0-9 ]* {ECHO; printf("\nInvalid string at line %d\n", c+1);}
+. ;
+%%
+
+void main(){
+yyin = fopen("ex1.c", "r");
+yylex();
+fclose(yyin);
+}
+

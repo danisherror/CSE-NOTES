@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a =prompt("Enter the string:");
+        var b="";
+        for(let i=0;i<a.length;i++)
+        {
+            if(a[i]===' ')
+            {
+                b=b+" ";
+            }
+            else if(a[i]!='a'||a[i]!='e'||a[i]!='o'||a[i]!='i'||a[i]!='u')
+            {
+                b=b+a[i]+"o"+a[i];
+            }
+            else
+            {
+                b=b+a[i];
+            }
+        }
+        alert(b);
+    </script>
+</body>
+</html>

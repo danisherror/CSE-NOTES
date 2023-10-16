@@ -1,0 +1,10 @@
+%option noyywrap
+flex q1.l
+gcc lex.yy.c
+a.exe
+
+
+bison -d cq1.y
+flex q1.l
+gcc lex.yy.c cq1.tab.c
+a.exe

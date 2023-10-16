@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Student Form</h2>
+
+    <form action="">
+        Name: <input type="text" required pattern="[A-Za-z]+"><br>
+        Email: <input type="email" required placeholder="please enter valid email address"><br>
+        Phone: <input type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="format: 080-555-5555"><br>
+        Semester: <input type="number" min="1" max="8" required><br>
+        Branch: <input type="text" list="branchlist"><br>
+        <datalist id="branchlist">
+            <option value="Computer Science">
+            <option value="Electrical Engineering">
+            <option value="Mechanical Engineering">
+        </datalist>
+        Website: <input type="text" required pattern="http://.*"><br>
+       <button type="submit">Submit</button><br>
+    </form>
+    
+</body>
+</html>

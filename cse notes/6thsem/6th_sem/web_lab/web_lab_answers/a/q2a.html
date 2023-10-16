@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="print"></p>
+    month number: <input type="number" name="a" id="a"><br>
+    <button onclick="add(document.getElementById('a').value)">Add</button>
+
+    <script>
+        function add(monthNumber) {
+            var monthNumber1 = parseInt(monthNumber, 10);
+            alert(monthNumber1);
+            function truep() {
+                const date = new Date();
+                date.setMonth(monthNumber1 - 1);
+
+                alert(date.toLocaleString('en-US', { month: 'long' }));
+            }
+            function falsep() {
+                alert("error data ");
+            }
+            if (monthNumber1 >= 1 && monthNumber1 <= 12) {
+                truep();
+            }
+            else {
+                falsep();
+            }
+
+        }
+    </script>
+</body>
+
+</html>

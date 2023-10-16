@@ -1,0 +1,19 @@
+function translate(text) {
+  const consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
+  let translatedText = '';
+
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (consonants.includes(char)) {
+      translatedText += char + 'o' + char;
+    } else {
+      translatedText += char;
+    }
+  }
+
+  return translatedText;
+}
+//********************************************
+const originalText = "this is fun";
+const translatedText = translate(originalText);
+console.log(translatedText);
