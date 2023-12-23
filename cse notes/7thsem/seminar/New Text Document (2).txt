@@ -1,0 +1,32 @@
+->Define digital forensics:
+-Digital forensics is a branch of forensic science that focuses on identifying, 
+acquiring, processing, analysing, and reporting on data stored electronically.
+
+-Electronic evidence is a component of almost all criminal activities and digital 
+forensics support is crucial for law enforcement investigations.
+
+-Electronic evidence can be collected from a wide array of sources, such as computers, 
+smartphones, remote storage, unmanned aerial systems, shipborne equipment, and more.
+
+-The main goal of digital forensics is to extract data from the electronic evidence, 
+process it into actionable intelligence and present the findings for prosecution. 
+All processes utilize sound forensic techniques to ensure the findings are admissible in court.
+
+->Here are some of the most popular digital investigation tools:
+
+-The SleuthKit
+-OSForensic
+-FTK Imager
+-Hex Editor Neo
+-Bulk Extracto
+
+->Challenges Faced by Digital Forensics
+-Due to the evidentiary nature of digital forensic science, 
+rigorous standards are required to withstand cross-examination in court. 
+Challenges faced by digital forensics are:
+
+-Extracting data from locked, or destroyed computing devices is one of the challenges 
+that digital forensic investigators face
+-Finding specific data entries within massive amounts of data stored locally or in the cloud
+-Keeping track of the digital chain of custody
+-Ensuring data integrity throughout an investigation
